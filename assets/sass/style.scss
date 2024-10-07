@@ -1,8 +1,8 @@
 /*-----------------------------------------------------------
 
-Template Name: BlackDsn - Ajax Portfolio HTML Template
-  Template URI: http://theme.dsngrid.com/blackdsn
-  Description: BlackDsn Ajax Portfolio Showcase HTML Template
+Template Name: Kamal Agasiyev - Ajax Portfolio HTML Template
+  Template URI: http://theme.dsngrid.com/Kamal Agasiyev
+  Description: Kamal Agasiyev Ajax Portfolio Showcase HTML Template
   Author: design_grid
   Author URI: https://themeforest.net/user/design_grid
   Version: 1.0.0
@@ -41,8 +41,9 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
 
 @import "mixins/_utilities.scss";
 
-
-:root, :root .v-light, :root .v-light-head {
+:root,
+:root .v-light,
+:root .v-light-head {
   --bg-color: #f9f9f9;
   --assistant-color: #efefef;
   --theme-color: #e4dcd3;
@@ -56,7 +57,6 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
   --reverse-heading-color: #fff;
 
   --bg-btn: #f6fafd;
-
 
   //.background-theme, &.background-theme, .calendar_wrap table tr td#today {
   //  --heading-color: #fff;
@@ -72,7 +72,6 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
 }
 
 @mixin darkVersion() {
-
   --bg-color: #131313;
   //--assistant-color: #171717;
   --assistant-color: #191919;
@@ -86,20 +85,17 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
 
   --bg-btn: #0a0909;
 
-  .background-theme, &.background-theme {
+  .background-theme,
+  &.background-theme {
     --font-color: #0009;
     --heading-color: #000;
   }
-
 }
 
-
-:root .v-dark, :root .v-dark-head {
-
+:root .v-dark,
+:root .v-dark-head {
   @include darkVersion;
-
 }
-
 
 @media only screen and (max-width: 991px) {
   .v-dark-head-mobile {
@@ -107,11 +103,9 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
   }
 }
 
-
 :root {
-
-  --body-font: 'Poppins', sans-serif;
-  --heading-font: 'Excon', sans-serif;
+  --body-font: "Poppins", sans-serif;
+  --heading-font: "Excon", sans-serif;
   --font-code: Menlo, monaco, Consolas, Lucida Console, monospace;
   --font-pre: "Courier 10 Pitch", Courier, monospace;
 
@@ -136,11 +130,11 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
     --theme-color: #f7e0c7;
   }
 
-
-
   @include media_1400(min) {
     --dsn-gap-container: 100px;
-    .container, .dsn-left-container, .dsn-right-container {
+    .container,
+    .dsn-left-container,
+    .dsn-right-container {
       --dsn-gap-container: 50px;
     }
     --title-heading: 95px;
@@ -157,7 +151,6 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
   @include media_991(min) {
     --margin-padding: 120px;
     --box-padding: 80px 40px;
-
   }
   @include media_991() {
     --margin-padding: 80px;
@@ -179,10 +172,7 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
 
   --bg-overlay: #000;
   --overlay-blend-mode: unset;
-
-
 }
-
 
 // elements
 @import "mixins/_mixins-master.scss";
@@ -194,7 +184,3 @@ Template Name: BlackDsn - Ajax Portfolio HTML Template
 @import "blocks/blocks";
 @import "media/_dsn-captions.scss";
 //@import "blocks/wc_blocks";
-
-
-
-

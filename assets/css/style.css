@@ -932,6 +932,7 @@ a:hover, a:active {
 .site-header .main-logo {
   position: relative;
   z-index: 1;
+  
 }
 .site-header ul.primary-nav {
   display: flex;
@@ -6554,4 +6555,95 @@ body.tax-product_tag #dsn_header, body.tax-product_cat #dsn_header {
   font-size: 12px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.running-text {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  position: relative;
+  margin-top: 20px;
+}
+
+.carouselTicker {
+  display: flex;
+  animation: scroll 40s linear infinite; /* Slower speed */
+  
+}
+
+.carouselTicker__list {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.carouselTicker__list li {
+  display: inline-block;
+  padding: 0 2rem;
+  margin-top: 20px; /* Margin top 20px */
+  font-size: 26px;
+}
+
+.carouselTicker__list li::before {
+  content: "\f441"; /* Font Awesome icon (example: arrow) */
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+.container.section-margin.text-center.d-flex {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  justify-content: space-between;
+  text-align: left; /* Override text-center for this specific container */
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+.text-content {
+  flex: 1;
+  max-width: 60%; /* Adjust as needed */
+  margin-right: 20px; /* Space between text and image */
+}
+.image-content {
+  flex: 1;
+  max-width: 40%; /* Adjust as needed */
+  text-align: right; /* Ensure the image is aligned to the right */
+}
+.image-content img {
+  max-width: 100%;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .container.section-margin.text-center.d-flex {
+    flex-direction: column; /* Stack items vertically on smaller screens */
+    align-items: center; /* Center align items */
+  }
+
+  .text-content, .image-content {
+    max-width: 100%; /* Full width on smaller screens */
+    margin-right: 0; /* Remove margin on smaller screens */
+    text-align: center; /* Center align text on smaller screens */
+  }
+}
+.skills-list {
+  text-align: left; /* Align text to the left */
+  margin: 20px 0; /* Add margin for spacing */
+  padding-left: 20px; /* Add padding for indentation */
+}
+
+.skills-list li {
+  margin-bottom: 10px; /* Add space between list items */
+  font-size: 18px; /* Increase text size */
+}
+
+.skills-list li span {
+  font-weight: bold; /* Make the span text bold */
 }
